@@ -13,6 +13,19 @@
 		5C132C171F80696000A1A434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C132C161F80696000A1A434 /* Assets.xcassets */; };
 		5C132C1A1F80696000A1A434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C132C181F80696000A1A434 /* LaunchScreen.storyboard */; };
 		5C132C251F80696100A1A434 /* NomadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C132C241F80696100A1A434 /* NomadTests.swift */; };
+		5CFDCE1D1F8175A000B5AA14 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFDCE1C1F8175A000B5AA14 /* ShareViewController.swift */; };
+		5CFDCE201F8175A000B5AA14 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CFDCE1E1F8175A000B5AA14 /* MainInterface.storyboard */; };
+		5CFDCE241F8175A000B5AA14 /* NomadShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5CFDCE1A1F8175A000B5AA14 /* NomadShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5CFDCE2A1F81766500B5AA14 /* NomadNetServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFDCE291F81766500B5AA14 /* NomadNetServiceDelegate.swift */; };
+		5CFDCE2B1F81766500B5AA14 /* NomadNetServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFDCE291F81766500B5AA14 /* NomadNetServiceDelegate.swift */; };
+		5CFDCE2E1F817BB700B5AA14 /* NSExtensionItem+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFDCE2D1F817BB700B5AA14 /* NSExtensionItem+.swift */; };
+		5CFDCE2F1F817BB700B5AA14 /* NSExtensionItem+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFDCE2D1F817BB700B5AA14 /* NSExtensionItem+.swift */; };
+		5CFDCE311F817C3100B5AA14 /* NSItemProvider+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFDCE301F817C3100B5AA14 /* NSItemProvider+.swift */; };
+		5CFDCE321F817C3100B5AA14 /* NSItemProvider+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFDCE301F817C3100B5AA14 /* NSItemProvider+.swift */; };
+		5CFDCE341F817CE200B5AA14 /* NSExtensionContext+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFDCE331F817CE200B5AA14 /* NSExtensionContext+.swift */; };
+		5CFDCE351F817CE200B5AA14 /* NSExtensionContext+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFDCE331F817CE200B5AA14 /* NSExtensionContext+.swift */; };
+		5CFDCE371F817E4800B5AA14 /* NetServiceBrowser+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFDCE361F817E4800B5AA14 /* NetServiceBrowser+.swift */; };
+		5CFDCE381F817E4800B5AA14 /* NetServiceBrowser+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFDCE361F817E4800B5AA14 /* NetServiceBrowser+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +36,28 @@
 			remoteGlobalIDString = 5C132C0B1F80696000A1A434;
 			remoteInfo = Nomad;
 		};
+		5CFDCE221F8175A000B5AA14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C132C041F80696000A1A434 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CFDCE191F8175A000B5AA14;
+			remoteInfo = NomadShareExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5CFDCE281F8175A000B5AA14 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5CFDCE241F8175A000B5AA14 /* NomadShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5C132C0C1F80696000A1A434 /* Nomad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nomad.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +70,15 @@
 		5C132C201F80696000A1A434 /* NomadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NomadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C132C241F80696100A1A434 /* NomadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomadTests.swift; sourceTree = "<group>"; };
 		5C132C261F80696100A1A434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CFDCE1A1F8175A000B5AA14 /* NomadShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NomadShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CFDCE1C1F8175A000B5AA14 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		5CFDCE1F1F8175A000B5AA14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5CFDCE211F8175A000B5AA14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CFDCE291F81766500B5AA14 /* NomadNetServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomadNetServiceDelegate.swift; sourceTree = "<group>"; };
+		5CFDCE2D1F817BB700B5AA14 /* NSExtensionItem+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSExtensionItem+.swift"; sourceTree = "<group>"; };
+		5CFDCE301F817C3100B5AA14 /* NSItemProvider+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSItemProvider+.swift"; sourceTree = "<group>"; };
+		5CFDCE331F817CE200B5AA14 /* NSExtensionContext+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSExtensionContext+.swift"; sourceTree = "<group>"; };
+		5CFDCE361F817E4800B5AA14 /* NetServiceBrowser+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetServiceBrowser+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +96,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CFDCE171F8175A000B5AA14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		5C132C031F80696000A1A434 = {
 			isa = PBXGroup;
 			children = (
+				5CFDCE2C1F817BA900B5AA14 /* Extensions */,
 				5C132C0E1F80696000A1A434 /* Nomad */,
 				5C132C231F80696000A1A434 /* NomadTests */,
+				5CFDCE1B1F8175A000B5AA14 /* NomadShareExtension */,
 				5C132C0D1F80696000A1A434 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +122,7 @@
 			children = (
 				5C132C0C1F80696000A1A434 /* Nomad.app */,
 				5C132C201F80696000A1A434 /* NomadTests.xctest */,
+				5CFDCE1A1F8175A000B5AA14 /* NomadShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +136,7 @@
 				5C132C161F80696000A1A434 /* Assets.xcassets */,
 				5C132C181F80696000A1A434 /* LaunchScreen.storyboard */,
 				5C132C1B1F80696000A1A434 /* Info.plist */,
+				5CFDCE291F81766500B5AA14 /* NomadNetServiceDelegate.swift */,
 			);
 			path = Nomad;
 			sourceTree = "<group>";
@@ -96,6 +150,27 @@
 			path = NomadTests;
 			sourceTree = "<group>";
 		};
+		5CFDCE1B1F8175A000B5AA14 /* NomadShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				5CFDCE1C1F8175A000B5AA14 /* ShareViewController.swift */,
+				5CFDCE1E1F8175A000B5AA14 /* MainInterface.storyboard */,
+				5CFDCE211F8175A000B5AA14 /* Info.plist */,
+			);
+			path = NomadShareExtension;
+			sourceTree = "<group>";
+		};
+		5CFDCE2C1F817BA900B5AA14 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5CFDCE2D1F817BB700B5AA14 /* NSExtensionItem+.swift */,
+				5CFDCE301F817C3100B5AA14 /* NSItemProvider+.swift */,
+				5CFDCE331F817CE200B5AA14 /* NSExtensionContext+.swift */,
+				5CFDCE361F817E4800B5AA14 /* NetServiceBrowser+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,10 +181,12 @@
 				5C132C081F80696000A1A434 /* Sources */,
 				5C132C091F80696000A1A434 /* Frameworks */,
 				5C132C0A1F80696000A1A434 /* Resources */,
+				5CFDCE281F8175A000B5AA14 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5CFDCE231F8175A000B5AA14 /* PBXTargetDependency */,
 			);
 			name = Nomad;
 			productName = Nomad;
@@ -134,6 +211,23 @@
 			productReference = 5C132C201F80696000A1A434 /* NomadTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		5CFDCE191F8175A000B5AA14 /* NomadShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CFDCE271F8175A000B5AA14 /* Build configuration list for PBXNativeTarget "NomadShareExtension" */;
+			buildPhases = (
+				5CFDCE161F8175A000B5AA14 /* Sources */,
+				5CFDCE171F8175A000B5AA14 /* Frameworks */,
+				5CFDCE181F8175A000B5AA14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NomadShareExtension;
+			productName = NomadShareExtension;
+			productReference = 5CFDCE1A1F8175A000B5AA14 /* NomadShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -153,6 +247,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 5C132C0B1F80696000A1A434;
 					};
+					5CFDCE191F8175A000B5AA14 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 5C132C071F80696000A1A434 /* Build configuration list for PBXProject "Nomad" */;
@@ -170,6 +268,7 @@
 			targets = (
 				5C132C0B1F80696000A1A434 /* Nomad */,
 				5C132C1F1F80696000A1A434 /* NomadTests */,
+				5CFDCE191F8175A000B5AA14 /* NomadShareExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -192,6 +291,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CFDCE181F8175A000B5AA14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CFDCE201F8175A000B5AA14 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -199,8 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CFDCE371F817E4800B5AA14 /* NetServiceBrowser+.swift in Sources */,
+				5CFDCE311F817C3100B5AA14 /* NSItemProvider+.swift in Sources */,
 				5C132C121F80696000A1A434 /* ViewController.swift in Sources */,
+				5CFDCE2E1F817BB700B5AA14 /* NSExtensionItem+.swift in Sources */,
 				5C132C101F80696000A1A434 /* AppDelegate.swift in Sources */,
+				5CFDCE341F817CE200B5AA14 /* NSExtensionContext+.swift in Sources */,
+				5CFDCE2A1F81766500B5AA14 /* NomadNetServiceDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +324,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CFDCE161F8175A000B5AA14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CFDCE2F1F817BB700B5AA14 /* NSExtensionItem+.swift in Sources */,
+				5CFDCE351F817CE200B5AA14 /* NSExtensionContext+.swift in Sources */,
+				5CFDCE381F817E4800B5AA14 /* NetServiceBrowser+.swift in Sources */,
+				5CFDCE2B1F81766500B5AA14 /* NomadNetServiceDelegate.swift in Sources */,
+				5CFDCE321F817C3100B5AA14 /* NSItemProvider+.swift in Sources */,
+				5CFDCE1D1F8175A000B5AA14 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -219,6 +344,11 @@
 			isa = PBXTargetDependency;
 			target = 5C132C0B1F80696000A1A434 /* Nomad */;
 			targetProxy = 5C132C211F80696000A1A434 /* PBXContainerItemProxy */;
+		};
+		5CFDCE231F8175A000B5AA14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CFDCE191F8175A000B5AA14 /* NomadShareExtension */;
+			targetProxy = 5CFDCE221F8175A000B5AA14 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -237,6 +367,14 @@
 				5C132C191F80696000A1A434 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5CFDCE1E1F8175A000B5AA14 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CFDCE1F1F8175A000B5AA14 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -352,6 +490,7 @@
 		5C132C2A1F80696100A1A434 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6M3YNUD5R9;
@@ -367,6 +506,7 @@
 		5C132C2B1F80696100A1A434 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6M3YNUD5R9;
@@ -413,6 +553,36 @@
 			};
 			name = Release;
 		};
+		5CFDCE251F8175A000B5AA14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M3YNUD5R9;
+				INFOPLIST_FILE = NomadShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RikkiGibson.Nomad.NomadShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CFDCE261F8175A000B5AA14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M3YNUD5R9;
+				INFOPLIST_FILE = NomadShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RikkiGibson.Nomad.NomadShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -439,6 +609,15 @@
 			buildConfigurations = (
 				5C132C2D1F80696100A1A434 /* Debug */,
 				5C132C2E1F80696100A1A434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CFDCE271F8175A000B5AA14 /* Build configuration list for PBXNativeTarget "NomadShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CFDCE251F8175A000B5AA14 /* Debug */,
+				5CFDCE261F8175A000B5AA14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
